@@ -15,7 +15,7 @@ Issue the following request to create a service key for a particular service ins
 
 ##### cURL #####
 <pre class="terminal">
- $ curl -H "X-Broker-API-Version: 2.4" http://username:password@broker-url/v2/catalog
+ $ cf curl /v2/service_keys -X POST -d '{"service_instance_guid":"foo", "name":"bar"}'
 </pre>
 
 ### Response ###
